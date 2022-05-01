@@ -1,6 +1,8 @@
 
 require('dotenv').config()
 
+console.log("process.env.GATSBY_STORYBLOK_TOKEN: ", process.env.GATSBY_STORYBLOK)
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,

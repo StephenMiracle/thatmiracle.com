@@ -28,21 +28,23 @@ exports.createPages = ({ graphql, actions }) => {
             reject(result.errors)
           }
 
-          const allPosts = result.data.posts.edges
+          const allPosts = result.data?.posts?.edges
 
-          allPosts.forEach((entry) => {
-            // 👇 the name of content type
-            if(entry.slug !== "blog") {
-              const page = {
-                  path: `/${entry.node.full_slug}`,
-                  component: blogPostTemplate,
-                  context: {
-                    story: entry.node
-                  }
+          if (allPosts) {
+            allPosts.forEach((entry) => {
+              // 👇 the name of content type
+              if(entry.slug !== "blog") {
+                const page = {
+                    path: `/${entry.node.full_slug}`,
+                    component: blogPostTemplate,
+                    context: {
+                      story: entry.node
+                    }
+                }
+                createPage(page)
               }
-              createPage(page)
-            }
-          })
+            })
+          }
         })
       )
     })

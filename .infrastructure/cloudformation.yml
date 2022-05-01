@@ -1,0 +1,90 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+  Repository:
+    Type: AWS::SSM::Parameter::Value<String>
+    Description: GitHub Repository URL
+    Default: GITHUB_REPO
+
+  OauthToken:
+    Type: AWS::SSM::Parameter::Value<String>
+    Description: GitHub Repository URL
+    Default: OAUTH_TOKEN
+
+  Domain:
+    Type: AWS::SSM::Parameter::Value<String>
+    Description: Domain name to host application
+    Default: DOMAIN
+
+  StoryblokToken:
+    Type: AWS::SSM::Parameter::Value<String>
+    Description: Storyblok API token
+    Default: GATSBY_STORYBLOK
+Resources:
+  AmplifyRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - amplify.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: Amplify
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: "amplify:*"
+                Resource: "*"
+
+  AmplifyApp:
+    Type: "AWS::Amplify::App"
+    Properties:
+      Name: Gatsby Site
+      Repository: !Ref Repository
+      Description: Gatsby site
+      OauthToken: !Ref OauthToken
+      EnvironmentVariables:
+        - Name: GATSBY_STORYBLOK
+          Value: !Ref StoryblokToken 
+      BuildSpec: |-
+        version: 0.1
+        frontend:
+          phases:
+            build:
+              commands:
+                - gatsby build
+          artifacts:
+            baseDirectory: public
+            files:
+              - '*'
+      IAMServiceRole: !GetAtt AmplifyRole.Arn
+
+  AmplifyBranch:
+    Type: AWS::Amplify::Branch
+    Properties:
+      BranchName: master
+      AppId: !GetAtt AmplifyApp.AppId
+      Description: Master Branch
+      EnableAutoBuild: true
+
+  AmplifyDomain:
+    Type: AWS::Amplify::Domain
+    Properties:
+      DomainName: !Ref Domain
+      AppId: !GetAtt AmplifyApp.AppId
+      SubDomainSettings:
+        - Prefix: master
+          BranchName: !GetAtt AmplifyBranch.BranchName
+
+Outputs:
+  DefaultDomain:
+    Value: !GetAtt AmplifyApp.DefaultDomain
+
+  MasterBranchUrl:
+    Value: !Join [ ".", [ !GetAtt AmplifyBranch.BranchName, !GetAtt AmplifyDomain.DomainName ]]
