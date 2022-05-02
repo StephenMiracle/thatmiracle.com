@@ -52,7 +52,7 @@ export default function useStoryblok(originalStory, location) {
  
     useEffect(() => {
       // load bridge only inside the storyblok editor
-      if(location.search.includes("_storyblok")) {
+      if(location?.search.includes("_storyblok")) {
         // first load the bridge and then attach the events
         addBridge(initEventListeners)
       }

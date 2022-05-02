@@ -10,7 +10,8 @@ import useStoryblok from "../lib/storyblok"
 
 export default function Page({ data }) {
   let story = data.storyblokEntry
-  story = useStoryblok(story, location)
+  const loc = typeof window !== "undefined" ? window.location : null
+  story = useStoryblok(story, loc)
   const content = story ? story.content : {}
 
   return (

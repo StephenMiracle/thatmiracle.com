@@ -10,7 +10,8 @@ import Seo from "../components/seo"
 import { ComponentMap } from "../componentMap"
  
 const NotFoundPage = ({ location }) => {
-  let story = useStoryblok(null, location)
+  const loc = typeof window !== "undefined" ? window.location : null
+  story = useStoryblok(null, loc)
   const content = story ? story.content : {body: []}
   console.log(content)
  
