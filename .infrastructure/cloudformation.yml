@@ -2,24 +2,40 @@ AWSTemplateFormatVersion: 2010-09-09
 
 Parameters:
   Repository:
-    Type: AWS::SSM::Parameter::Value<String>
+    Type: String
     Description: GitHub Repository URL
-    Default: GITHUB_REPO
-
-  OauthToken:
-    Type: AWS::SSM::Parameter::Value<String>
-    Description: GitHub Repository URL
-    Default: OAUTH_TOKEN
+    Default: '{{resolve:ssm:GITHUB_REPO:1}}'
 
   Domain:
-    Type: AWS::SSM::Parameter::Value<String>
+    Type: String
     Description: Domain name to host application
-    Default: DOMAIN
+    Default: '{{resolve:ssm:DOMAIN:1}}'
 
   StoryblokToken:
-    Type: AWS::SSM::Parameter::Value<String>
+    Type: String
     Description: Storyblok API token
-    Default: GATSBY_STORYBLOK
+    Default: '{{resolve:secretsmanager:GATSBY_STORYBLOK}}'
+  
+  SiteName:
+    Type: String
+    Description: Name of site
+    Default: '{{resolve:ssm:SITE_NAME:1}}'
+
+  AccessToken:
+    Type: String
+    Description: Github access token
+    Default: '{{resolve:secretsmanager:ACCESS_TOKEN}}'
+
+  SSMPolicy:
+    Type: String
+    Description: 'ARN of the first IAM Managed Policy to add to the role'
+    Default: arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess
+
+  SecretsPolicy:
+    Type: String
+    Description: ARN of the Secrets read write policy
+    Default: arn:aws:iam::aws:policy/SecretsManagerReadWrite
+
 Resources:
   AmplifyRole:
     Type: AWS::IAM::Role
@@ -33,6 +49,9 @@ Resources:
                 - amplify.amazonaws.com
             Action:
               - sts:AssumeRole
+      ManagedPolicyArns:
+        - !Ref SSMPolicy
+        - !Ref SecretsPolicy
       Policies:
         - PolicyName: Amplify
           PolicyDocument:
@@ -45,10 +64,13 @@ Resources:
   AmplifyApp:
     Type: "AWS::Amplify::App"
     Properties:
-      Name: Gatsby Site
+      Name: !Ref SiteName
       Repository: !Ref Repository
-      Description: Gatsby site
-      OauthToken: !Ref OauthToken
+      OauthToken: !Ref AccessToken
+      Description: MoonBaby Labs Site Built from Skeleton
+      AutoBranchCreationConfig:
+        EnableAutoBranchCreation: true
+        EnableAutoBuild: true
       EnvironmentVariables:
         - Name: GATSBY_STORYBLOK
           Value: !Ref StoryblokToken 
@@ -58,19 +80,38 @@ Resources:
           phases:
             build:
               commands:
+                - npm i
                 - gatsby build
           artifacts:
             baseDirectory: public
             files:
-              - '*'
+              - '**/*'
       IAMServiceRole: !GetAtt AmplifyRole.Arn
 
   AmplifyBranch:
     Type: AWS::Amplify::Branch
     Properties:
-      BranchName: master
+      BranchName: main
       AppId: !GetAtt AmplifyApp.AppId
-      Description: Master Branch
+      Description: Main Branch
+      EnableAutoBuild: true
+      EnablePullRequestPreview: true
+
+  AmplifyInternalReviewBranch:
+    Type: AWS::Amplify::Branch
+    Properties:
+      BranchName: review/internal
+      AppId: !GetAtt AmplifyApp.AppId
+      Description: Internal Review Branch
+      EnableAutoBuild: true
+      EnablePullRequestPreview: true
+
+  AmplifyExternalReviewBranch:
+    Type: AWS::Amplify::Branch
+    Properties:
+      BranchName: review/external
+      AppId: !GetAtt AmplifyApp.AppId
+      Description: Internal Review Branch
       EnableAutoBuild: true
 
   AmplifyDomain:
@@ -78,13 +119,34 @@ Resources:
     Properties:
       DomainName: !Ref Domain
       AppId: !GetAtt AmplifyApp.AppId
+      EnableAutoSubDomain: false
       SubDomainSettings:
-        - Prefix: master
+        - Prefix: ''
           BranchName: !GetAtt AmplifyBranch.BranchName
+
+  AmplifyInternalReviewBranchDomain:
+    Type: AWS::Amplify::Domain
+    Properties:
+      DomainName: !Ref Domain
+      AppId: !GetAtt AmplifyApp.AppId
+      EnableAutoSubDomain: false
+      SubDomainSettings:
+        - Prefix: 'internal'
+          BranchName: !GetAtt AmplifyInternalReviewBranch.BranchName
+
+  AmplifyExternalReviewBranchDomain:
+    Type: AWS::Amplify::Domain
+    Properties:
+      DomainName: !Ref Domain
+      AppId: !GetAtt AmplifyApp.AppId
+      EnableAutoSubDomain: false
+      SubDomainSettings:
+        - Prefix: 'preview'
+          BranchName: !GetAtt AmplifyExternalReviewBranch.BranchName
 
 Outputs:
   DefaultDomain:
     Value: !GetAtt AmplifyApp.DefaultDomain
 
   MasterBranchUrl:
-    Value: !Join [ ".", [ !GetAtt AmplifyBranch.BranchName, !GetAtt AmplifyDomain.DomainName ]]
+    Value: !GetAtt AmplifyDomain.DomainName
