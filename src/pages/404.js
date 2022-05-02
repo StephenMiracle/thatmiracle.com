@@ -11,7 +11,7 @@ import { ComponentMap } from "../componentMap"
  
 const NotFoundPage = ({ location }) => {
   const loc = typeof window !== "undefined" ? window.location : null
-  story = useStoryblok(null, loc)
+  let story = story = useStoryblok(null, loc)
   const content = story ? story.content : {body: []}
   console.log(content)
  
