@@ -1,0 +1,117 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #00bcd4;
+$secondary-color: #f44336;
+$accent-color: #ff9800;
+$light-color: #fafafa;
+$dark-color: #212121;
+$black-color: #000;
+$white-color: #fff;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
+.theme-light {
+  background-color: $light-color;
+  color: $dark-color;
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.theme-dark {
+  background-color: $dark-color;
+  color: $light-color;
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.theme-primary {
+  background-color: $primary-color;
+  color: $white-color;
+
+  a {
+    color: $white-color;
+  }
+
+}
+
+.theme-primary-dark {
+  background-color: $primary-color;
+  color: $dark-color;
+
+  a {
+    color: $dark-color;
+  }
+
+}
+
+.theme-primary-dark-inversed {
+  background-color: $dark-color;
+  color: $primary-color;
+
+  a {
+    color: $primary-color;
+  }
+
+}
+
+.theme-primary-inversed {
+  background-color: $white-color;
+  color: $primary-color;
+
+  a {
+    color: $primary-color;
+  }
+
+}
+
+.theme-secondary {
+  background-color: $secondary-color;
+  color: $white-color;
+
+  a {
+    color: $white-color;
+  }
+
+}
+
+.theme-secondary-inversed {
+  background-color: $white-color;
+  color: $secondary-color;
+
+  a {
+    color: $secondary-color;
+  }
+
+}
+
+.theme-secondary-dark {
+  background-color: $secondary-color;
+  color: $dark-color;
+
+  a {
+    color: $dark-color;
+  }
+
+}
+
+.theme-secondary-dark-inversed {
+  background-color: $dark-color;
+  color: $secondary-color;
+
+  a {
+    color: $secondary-color;
+  }
+
+}
+
+
+.accent {
+  color: $accent-color;
+}

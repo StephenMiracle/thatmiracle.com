@@ -62,21 +62,6 @@ exports.createPages = ({ graphql, actions }) => {
             })
           }
 
-          if (allPages) {
-            allPages.forEach(e => {
-              console.log(e)
-              createPage({
-                path: `/${e.node.full_slug}`,
-                component: path.resolve('./src/modules/page.tsx'),
-                context: {
-                  id: e.node.id,
-                  content: JSON.parse(e.node.content),
-                  menus,
-                },
-              })
-            })
-          }
-
           if (allPosts) {
             allPosts.forEach((entry) => {
               // 👇 the name of content type
