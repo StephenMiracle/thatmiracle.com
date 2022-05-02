@@ -7,13 +7,13 @@ import Seo from "../components/seo"
 
 const IndexPage = ({pageContext}) => {
   const {content, menus} = pageContext
-  console.log(content)
 
   return (
     <Layout>
       <Seo title="Home" />
       {
         content.body.map((comp, idx) => {
+          console.log(comp.component)
           return (
             <div key={idx}>
               { ComponentMap[comp.component](comp) }
