@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+
+ 
  
 export default function useStoryblok(originalStory, location) {
     let [story, setStory] = useState(originalStory)
@@ -17,7 +19,6 @@ export default function useStoryblok(originalStory, location) {
  
         storyblokInstance.on(['published', 'change'], (event) => {
           // reloade project on save an publish
-          window.location.reload()
         })  
     
         storyblokInstance.on(['input'], (event) => {
@@ -27,8 +28,9 @@ export default function useStoryblok(originalStory, location) {
           }
         }) 
  
+
         storyblokInstance.on(['enterEditmode'], (event) => {
-          // loading the story with the client
+          // loading the draft version on initial view of the page
         }) 
       }
     }

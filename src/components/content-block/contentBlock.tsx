@@ -5,7 +5,7 @@ export default function comp(props) {
   const { items, width } = props
 
   const getClasses = () => {
-    const classes = ['']
+    const classes = ['mx-auto']
     classes.push(`lg:w-${width}`)
     return classes.join(' ')
   }

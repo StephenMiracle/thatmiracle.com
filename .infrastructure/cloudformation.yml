@@ -85,7 +85,12 @@ Resources:
           artifacts:
             baseDirectory: public
             files:
+              - '*'
               - '**/*'
+              - '**/**/*'
+          cache:
+            paths:
+              - node_modules/**/*
       IAMServiceRole: !GetAtt AmplifyRole.Arn
 
   AmplifyBranch:
@@ -105,6 +110,9 @@ Resources:
       Description: Internal Review Branch
       EnableAutoBuild: true
       EnablePullRequestPreview: true
+      EnvironmentVariables:
+        - Name: NODE_ENV
+          Value: testing
 
   AmplifyExternalReviewBranch:
     Type: AWS::Amplify::Branch
@@ -113,6 +121,9 @@ Resources:
       AppId: !GetAtt AmplifyApp.AppId
       Description: Internal Review Branch
       EnableAutoBuild: true
+      EnvironmentVariables:
+        - Name: NODE_ENV
+          Value: testing
 
   AmplifyDomain:
     Type: AWS::Amplify::Domain
@@ -123,24 +134,8 @@ Resources:
       SubDomainSettings:
         - Prefix: ''
           BranchName: !GetAtt AmplifyBranch.BranchName
-
-  AmplifyInternalReviewBranchDomain:
-    Type: AWS::Amplify::Domain
-    Properties:
-      DomainName: !Ref Domain
-      AppId: !GetAtt AmplifyApp.AppId
-      EnableAutoSubDomain: false
-      SubDomainSettings:
         - Prefix: 'internal'
           BranchName: !GetAtt AmplifyInternalReviewBranch.BranchName
-
-  AmplifyExternalReviewBranchDomain:
-    Type: AWS::Amplify::Domain
-    Properties:
-      DomainName: !Ref Domain
-      AppId: !GetAtt AmplifyApp.AppId
-      EnableAutoSubDomain: false
-      SubDomainSettings:
         - Prefix: 'preview'
           BranchName: !GetAtt AmplifyExternalReviewBranch.BranchName
 

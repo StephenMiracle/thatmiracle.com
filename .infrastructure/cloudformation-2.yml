@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+
+Resources:
+  SiteRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - s3.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      ManagedPolicyArns:
+        - !Ref SSMPolicy
+        - !Ref SecretsPolicy
+      Policies:
+        - PolicyName: Amplify
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: "s3:*"
+                Resource: "*"
+
+
+Type: AWS::S3::Bucket
+Properties: 
+  AccelerateConfiguration: 
+    AccelerateConfiguration
+  AccessControl: String
+  AnalyticsConfigurations: 
+    - AnalyticsConfiguration
+  BucketEncryption: 
+    BucketEncryption
+  BucketName: String
+  CorsConfiguration: 
+    CorsConfiguration
+  IntelligentTieringConfigurations: 
+    - IntelligentTieringConfiguration
+  InventoryConfigurations: 
+    - InventoryConfiguration
+  LifecycleConfiguration: 
+    LifecycleConfiguration
+  LoggingConfiguration: 
+    LoggingConfiguration
+  MetricsConfigurations: 
+    - MetricsConfiguration
+  NotificationConfiguration: 
+    NotificationConfiguration
+  ObjectLockConfiguration: 
+    ObjectLockConfiguration
+  ObjectLockEnabled: Boolean
+  OwnershipControls: 
+    OwnershipControls
+  PublicAccessBlockConfiguration: 
+    PublicAccessBlockConfiguration
+  ReplicationConfiguration: 
+    ReplicationConfiguration
+  Tags: 
+    - Tag
+  VersioningConfiguration: 
+    VersioningConfiguration
+  WebsiteConfiguration: 
+    WebsiteConfiguration
