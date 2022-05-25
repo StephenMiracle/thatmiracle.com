@@ -9,11 +9,5 @@ module.exports = {
   region: process.env.REGION,
   integrations: {
     storyblok: process.env.GATSBY_STORYBLOK
-  },
-  infrastructureSteps: {
-    bucket: true,
-    cdn: true,
-    cert: true,
-    route: true
   }
 }
