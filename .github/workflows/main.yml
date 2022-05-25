@@ -24,17 +24,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-        env:
-          GATSBY_STORYBLOK: ${{ secrets.GATSBY_STORYBLOK }}
-
-      - name: init
-        run: npm run init
 
       - name: Create .env file
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_GATSBY_STORYBLOK: ${{ secrets.GATSBY_STORYBLOK }}
 
+      - name: init
+        run: npm run init
 
       # Runs a single command using the runners shell
       - name: build
@@ -51,3 +48,4 @@ jobs:
         uses: jonelantha/gatsby-s3-action@v1
         with:
           dest-s3-bucket: ${{ secrets.DOMAIN }}
+          
