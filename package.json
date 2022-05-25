@@ -1,0 +1,25 @@
+{
+  "name": "thatmiracle.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npm i && cd app && npm i && cd ../.infrastructure/terraform && npm i",
+    "build": "cd app && npm run build",
+    "deploy": "cd app && npm run build && cd ../.infrastructure/terraform && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenMiracle/thatmiracle.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenMiracle/thatmiracle.com/issues"
+  },
+  "homepage": "https://github.com/StephenMiracle/thatmiracle.com#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
