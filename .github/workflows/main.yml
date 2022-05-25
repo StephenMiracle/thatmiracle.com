@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ main, review/* ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, review/* ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,3 +31,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: build
         run: npm run build
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy
+        uses: jonelantha/gatsby-s3-action@v1
+        with:
+          dest-s3-bucket: ${{ secrets.DOMAIN }}
