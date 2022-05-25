@@ -43,6 +43,8 @@ jobs:
         with:
           path: |
             **/node_modules
+            **/.cache
+            **/public
 
           key: ${{ runner.os }}-npm-${{ hashFiles('**/package.lock') }}
           restore-keys: |
