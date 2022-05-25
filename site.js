@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-console.log(process.env.GATSBY_STORYBLOK)
 
 module.exports = {
   title: 'My website',
