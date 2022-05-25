@@ -8,6 +8,7 @@ import ProfileCard from "../components/profile-card/profileCard"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+    <h1>Test</h1>
     <ProfileCard />
   </Layout>
 )
