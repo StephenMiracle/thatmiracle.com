@@ -28,7 +28,7 @@ jobs:
       - name: Create .env file
         uses: SpicyPizza/create-envfile@v1
         with:
-          envkey_GATSBY_STORYBLOK: ${{ secrets.GATSBY_STORYBLOK }}
+          envkey_GATSBY_STORYBLOK: 'sfsefsdfes'
 
       - name: init
         run: npm run init
@@ -48,4 +48,3 @@ jobs:
         uses: jonelantha/gatsby-s3-action@v1
         with:
           dest-s3-bucket: ${{ secrets.DOMAIN }}
-          
