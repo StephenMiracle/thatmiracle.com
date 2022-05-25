@@ -1,0 +1,27 @@
+2022/05/24 12:11:28 [INFO] Terraform version: 0.12.29  
+2022/05/24 12:11:28 [INFO] Go runtime version: go1.13.14
+2022/05/24 12:11:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/05/24 12:11:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/05/24 12:11:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/05/24 12:11:28 [INFO] CLI command args: []string{"version", "-json"}
+2022/05/24 12:11:28 [DEBUG] checking for provider in "."
+2022/05/24 12:11:28 [DEBUG] checking for provider in "/usr/local/bin"
+2022/05/24 12:11:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/05/24 12:11:30 [INFO] Terraform version: 0.12.29  
+2022/05/24 12:11:30 [INFO] Go runtime version: go1.13.14
+2022/05/24 12:11:30 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/05/24 12:11:30 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/05/24 12:11:30 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/05/24 12:11:30 [INFO] CLI command args: []string{"version", "-json"}
+2022/05/24 12:11:30 [DEBUG] checking for provider in "."
+2022/05/24 12:11:30 [DEBUG] checking for provider in "/usr/local/bin"
+2022/05/24 12:11:30 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/05/24 12:11:30 [INFO] Terraform version: 0.12.29  
+2022/05/24 12:11:30 [INFO] Go runtime version: go1.13.14
+2022/05/24 12:11:30 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/05/24 12:11:30 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/05/24 12:11:30 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/05/24 12:11:30 [INFO] CLI command args: []string{"version", "-v"}
+2022/05/24 12:11:30 [DEBUG] checking for provider in "."
+2022/05/24 12:11:30 [DEBUG] checking for provider in "/usr/local/bin"
+2022/05/24 12:11:30 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
