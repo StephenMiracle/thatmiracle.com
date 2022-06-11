@@ -32,6 +32,8 @@ class MyStack extends TerraformStack {
       comment: BUCKET_NAME,
     })
 
+
+
     const bucket = this.buckets(BUCKET_NAME, cloudfrontOriginAccessIdentity.id)
     this.files(bucket, BUCKET_NAME)
     const cert = this.cert(BUCKET_NAME)
@@ -54,6 +56,7 @@ class MyStack extends TerraformStack {
         key: file.replace(`../../app/public/`, ''),       // Using relative path for folder structure on S3
         bucket: bucketName,
         source: path.resolve(file),          // Using absolute path to upload
+        acl: 'public-read',
         etag: `${Date.now()}`,
         contentType: mime.contentType(path.extname(file)) || undefined       // Set the content-type for each object    
       });
