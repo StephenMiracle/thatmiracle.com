@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Handlee&family=Tai+Heritage+Pro:wght@400;700&display=swap');
 
-$font-stack:  'Handlee', cursive;
+$font-stack:  'Tai Heritage Pro', sans-serif;
 $primary-color: #0e213a;
 $secondary-color: #f44336;
 $accent-color: #ff9800;
@@ -12,6 +12,10 @@ $white-color: #fff;
 body {
   font: 100% $font-stack;
   color: $primary-color;
+}
+
+.font-cursive {
+  font-family: 'Handlee', cursive;
 }
 
 
