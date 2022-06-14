@@ -11,10 +11,10 @@ export default function Page() {
         <Seo title="Home" />
         <div className="lg:max-w-4xl mx-auto text-white lg:mt-16">
           <p className="text-xl lg:text-6xl leading-loose">Hi! My name is Stephen Miracle.</p> 
-          <p className="text-lg lg:text-4xl leading-relaxed my-20">I provide clarity & direction to innovative technology teams to increase their customer stickiness, adoption & integration.</p>
+          <p className="text-lg lg:text-4xl leading-relaxed my-20">I provide clarity to innovative technology products wanting to increase customer integration, adoption & stickiness.</p>
         </div>
         <div className="bg-white px-6 py-8 lg:max-w-5xl mx-auto mt-24">
-          <p className="max-w-4xl mx-auto text-xl text-lg lg:text-3xl leading-relaxed">These solutions generate a 5X increase in lifetime customer value while reducing customer integration, onboarding time & costs by more than 76%.</p>
+          <p className="max-w-4xl mx-auto text-xl text-lg lg:text-3xl leading-relaxed">Effective integration implementations can generate a 5X increase in lifetime customer value while reducing customer integration, onboarding time & costs by more than 76%.</p>
         </div>
       </div>
     </div>

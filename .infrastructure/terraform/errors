@@ -1,27 +1,936 @@
-2022/05/24 12:11:28 [INFO] Terraform version: 0.12.29  
-2022/05/24 12:11:28 [INFO] Go runtime version: go1.13.14
-2022/05/24 12:11:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
-2022/05/24 12:11:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
-2022/05/24 12:11:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
-2022/05/24 12:11:28 [INFO] CLI command args: []string{"version", "-json"}
-2022/05/24 12:11:28 [DEBUG] checking for provider in "."
-2022/05/24 12:11:28 [DEBUG] checking for provider in "/usr/local/bin"
-2022/05/24 12:11:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
-2022/05/24 12:11:30 [INFO] Terraform version: 0.12.29  
-2022/05/24 12:11:30 [INFO] Go runtime version: go1.13.14
-2022/05/24 12:11:30 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
-2022/05/24 12:11:30 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
-2022/05/24 12:11:30 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
-2022/05/24 12:11:30 [INFO] CLI command args: []string{"version", "-json"}
-2022/05/24 12:11:30 [DEBUG] checking for provider in "."
-2022/05/24 12:11:30 [DEBUG] checking for provider in "/usr/local/bin"
-2022/05/24 12:11:30 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
-2022/05/24 12:11:30 [INFO] Terraform version: 0.12.29  
-2022/05/24 12:11:30 [INFO] Go runtime version: go1.13.14
-2022/05/24 12:11:30 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
-2022/05/24 12:11:30 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
-2022/05/24 12:11:30 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
-2022/05/24 12:11:30 [INFO] CLI command args: []string{"version", "-v"}
-2022/05/24 12:11:30 [DEBUG] checking for provider in "."
-2022/05/24 12:11:30 [DEBUG] checking for provider in "/usr/local/bin"
-2022/05/24 12:11:30 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:22:20 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:22:20 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:22:20 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:22:20 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:22:20 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:22:20 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:22:20 [DEBUG] checking for provider in "."
+2022/06/12 01:22:20 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:22:20 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:22:21 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:22:21 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:22:21 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:22:21 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:22:21 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:22:21 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:22:21 [DEBUG] checking for provider in "."
+2022/06/12 01:22:21 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:22:21 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:23:07 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:23:07 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:23:07 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:23:07 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:23:07 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:23:07 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:23:07 [DEBUG] checking for provider in "."
+2022/06/12 01:23:07 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:23:07 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:23:08 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:23:08 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:23:08 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:23:08 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:23:08 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:23:08 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:23:08 [DEBUG] checking for provider in "."
+2022/06/12 01:23:08 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:23:08 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:30:27 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:30:27 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:30:27 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:30:27 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:30:27 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:30:27 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:30:27 [DEBUG] checking for provider in "."
+2022/06/12 01:30:27 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:30:27 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:30:28 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:30:28 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:30:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:30:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:30:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:30:28 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:30:28 [DEBUG] checking for provider in "."
+2022/06/12 01:30:28 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:30:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:30:28 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:30:28 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:30:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 01:30:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:30:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:30:28 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 01:30:28 [DEBUG] checking for provider in "."
+2022/06/12 01:30:28 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:30:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:33:39 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:33:39 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:33:39 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:33:39 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:33:39 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:33:39 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:33:39 [DEBUG] checking for provider in "."
+2022/06/12 01:33:39 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:33:39 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:33:41 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:33:41 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:33:41 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 01:33:41 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:33:41 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:33:41 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 01:33:41 [DEBUG] checking for provider in "."
+2022/06/12 01:33:41 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:33:41 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 01:33:41 [INFO] Terraform version: 0.12.29  
+2022/06/12 01:33:41 [INFO] Go runtime version: go1.13.14
+2022/06/12 01:33:41 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 01:33:41 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 01:33:41 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 01:33:41 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 01:33:41 [DEBUG] checking for provider in "."
+2022/06/12 01:33:41 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 01:33:41 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:20:17 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:20:17 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:20:17 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:20:17 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:20:17 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:20:17 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:20:17 [DEBUG] checking for provider in "."
+2022/06/12 02:20:17 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:20:17 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:20:19 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:20:19 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:20:19 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:20:19 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:20:19 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:20:19 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:20:19 [DEBUG] checking for provider in "."
+2022/06/12 02:20:19 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:20:19 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:20:19 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:20:19 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:20:19 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 02:20:19 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:20:19 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:20:19 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 02:20:19 [DEBUG] checking for provider in "."
+2022/06/12 02:20:19 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:20:19 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:28:45 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:28:45 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:28:45 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:28:45 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:28:45 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:28:45 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:28:45 [DEBUG] checking for provider in "."
+2022/06/12 02:28:45 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:28:45 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:28:47 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:28:47 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:28:47 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:28:47 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:28:47 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:28:47 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:28:47 [DEBUG] checking for provider in "."
+2022/06/12 02:28:47 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:28:47 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:28:47 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:28:47 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:28:47 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 02:28:47 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:28:47 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:28:47 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 02:28:47 [DEBUG] checking for provider in "."
+2022/06/12 02:28:47 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:28:47 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:47:52 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:47:52 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:47:52 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:47:52 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:47:52 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:47:52 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:47:52 [DEBUG] checking for provider in "."
+2022/06/12 02:47:52 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:47:52 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:47:54 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:47:54 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:47:54 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:47:54 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:47:54 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:47:54 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:47:54 [DEBUG] checking for provider in "."
+2022/06/12 02:47:54 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:47:54 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:47:54 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:47:54 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:47:54 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 02:47:54 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:47:54 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:47:54 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 02:47:54 [DEBUG] checking for provider in "."
+2022/06/12 02:47:54 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:47:54 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:53:44 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:53:44 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:53:44 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:53:44 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:53:44 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:53:44 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:53:44 [DEBUG] checking for provider in "."
+2022/06/12 02:53:44 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:53:44 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:53:46 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:53:46 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:53:46 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 02:53:46 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:53:46 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:53:46 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 02:53:46 [DEBUG] checking for provider in "."
+2022/06/12 02:53:46 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:53:46 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 02:53:46 [INFO] Terraform version: 0.12.29  
+2022/06/12 02:53:46 [INFO] Go runtime version: go1.13.14
+2022/06/12 02:53:46 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 02:53:46 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 02:53:46 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 02:53:46 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 02:53:46 [DEBUG] checking for provider in "."
+2022/06/12 02:53:46 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 02:53:46 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:01:55 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:01:55 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:01:55 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:01:55 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:01:55 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:01:55 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:01:55 [DEBUG] checking for provider in "."
+2022/06/12 03:01:55 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:01:55 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:01:58 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:01:58 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:01:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:01:58 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:01:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:01:58 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:01:58 [DEBUG] checking for provider in "."
+2022/06/12 03:01:58 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:01:58 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:01:58 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:01:58 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:01:58 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 03:01:58 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:01:58 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:01:58 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 03:01:58 [DEBUG] checking for provider in "."
+2022/06/12 03:01:58 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:01:58 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:10:13 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:10:13 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:10:13 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:10:13 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:10:13 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:10:13 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:10:13 [DEBUG] checking for provider in "."
+2022/06/12 03:10:13 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:10:13 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:10:15 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:10:15 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:10:15 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:10:15 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:10:15 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:10:15 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:10:15 [DEBUG] checking for provider in "."
+2022/06/12 03:10:15 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:10:15 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:10:15 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:10:15 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:10:15 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 03:10:15 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:10:15 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:10:15 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 03:10:15 [DEBUG] checking for provider in "."
+2022/06/12 03:10:15 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:10:15 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:22:36 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:22:36 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:22:36 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:22:36 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:22:36 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:22:36 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:22:36 [DEBUG] checking for provider in "."
+2022/06/12 03:22:36 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:22:36 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:22:38 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:22:38 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:22:38 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:22:38 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:22:38 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:22:38 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:22:38 [DEBUG] checking for provider in "."
+2022/06/12 03:22:38 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:22:38 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:24:01 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:24:01 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:24:01 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:24:01 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:24:01 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:24:01 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:24:01 [DEBUG] checking for provider in "."
+2022/06/12 03:24:01 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:24:01 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:24:02 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:24:02 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:24:02 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:24:02 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:24:02 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:24:02 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:24:02 [DEBUG] checking for provider in "."
+2022/06/12 03:24:02 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:24:02 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:24:27 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:24:27 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:24:27 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:24:27 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:24:27 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:24:27 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:24:27 [DEBUG] checking for provider in "."
+2022/06/12 03:24:27 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:24:27 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:24:28 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:24:28 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:24:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:24:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:24:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:24:29 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:24:29 [DEBUG] checking for provider in "."
+2022/06/12 03:24:29 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:24:29 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:24:29 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:24:29 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:24:29 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 03:24:29 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:24:29 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:24:29 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 03:24:29 [DEBUG] checking for provider in "."
+2022/06/12 03:24:29 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:24:29 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:28:57 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:28:57 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:28:57 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:28:57 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:28:57 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:28:57 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:28:57 [DEBUG] checking for provider in "."
+2022/06/12 03:28:57 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:28:57 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:28:59 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:28:59 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:28:59 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:28:59 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:28:59 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:28:59 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:28:59 [DEBUG] checking for provider in "."
+2022/06/12 03:28:59 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:28:59 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:28:59 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:28:59 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:28:59 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 03:28:59 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:28:59 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:28:59 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 03:28:59 [DEBUG] checking for provider in "."
+2022/06/12 03:28:59 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:28:59 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:53:14 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:53:14 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:53:14 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:53:14 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:53:14 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:53:14 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:53:14 [DEBUG] checking for provider in "."
+2022/06/12 03:53:14 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:53:14 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:53:15 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:53:15 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:53:15 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:53:15 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:53:15 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:53:15 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:53:15 [DEBUG] checking for provider in "."
+2022/06/12 03:53:15 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:53:15 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:53:15 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:53:15 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:53:15 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 03:53:15 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:53:15 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:53:15 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 03:53:15 [DEBUG] checking for provider in "."
+2022/06/12 03:53:15 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:53:15 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:54:42 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:54:42 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:54:42 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:54:42 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:54:42 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:54:42 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:54:42 [DEBUG] checking for provider in "."
+2022/06/12 03:54:42 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:54:42 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:54:43 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:54:43 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:54:43 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:54:43 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:54:43 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:54:43 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:54:43 [DEBUG] checking for provider in "."
+2022/06/12 03:54:43 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:54:43 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:54:43 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:54:43 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:54:43 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 03:54:43 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:54:43 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:54:43 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 03:54:43 [DEBUG] checking for provider in "."
+2022/06/12 03:54:43 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:54:43 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:58:17 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:58:17 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:58:17 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:58:17 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:58:17 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:58:17 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:58:17 [DEBUG] checking for provider in "."
+2022/06/12 03:58:17 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:58:17 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:58:18 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:58:18 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:58:18 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 03:58:18 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:58:18 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:58:18 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 03:58:18 [DEBUG] checking for provider in "."
+2022/06/12 03:58:18 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:58:18 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 03:58:18 [INFO] Terraform version: 0.12.29  
+2022/06/12 03:58:18 [INFO] Go runtime version: go1.13.14
+2022/06/12 03:58:18 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 03:58:18 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 03:58:18 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 03:58:18 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 03:58:18 [DEBUG] checking for provider in "."
+2022/06/12 03:58:18 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 03:58:18 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 04:03:55 [INFO] Terraform version: 0.12.29  
+2022/06/12 04:03:55 [INFO] Go runtime version: go1.13.14
+2022/06/12 04:03:55 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 04:03:55 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 04:03:55 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 04:03:55 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 04:03:55 [DEBUG] checking for provider in "."
+2022/06/12 04:03:55 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 04:03:55 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 04:03:57 [INFO] Terraform version: 0.12.29  
+2022/06/12 04:03:57 [INFO] Go runtime version: go1.13.14
+2022/06/12 04:03:57 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 04:03:57 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 04:03:57 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 04:03:57 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 04:03:57 [DEBUG] checking for provider in "."
+2022/06/12 04:03:57 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 04:03:57 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 04:03:57 [INFO] Terraform version: 0.12.29  
+2022/06/12 04:03:57 [INFO] Go runtime version: go1.13.14
+2022/06/12 04:03:57 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 04:03:57 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 04:03:57 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 04:03:57 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 04:03:57 [DEBUG] checking for provider in "."
+2022/06/12 04:03:57 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 04:03:57 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:12:19 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:12:19 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:12:19 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:12:19 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:12:19 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:12:19 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:12:19 [DEBUG] checking for provider in "."
+2022/06/12 10:12:19 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:12:19 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:12:20 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:12:20 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:12:20 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:12:20 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:12:20 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:12:20 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:12:20 [DEBUG] checking for provider in "."
+2022/06/12 10:12:20 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:12:20 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:12:20 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:12:20 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:12:20 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 10:12:20 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:12:20 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:12:20 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 10:12:20 [DEBUG] checking for provider in "."
+2022/06/12 10:12:20 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:12:20 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:16:36 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:16:36 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:16:36 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:16:36 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:16:36 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:16:36 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:16:36 [DEBUG] checking for provider in "."
+2022/06/12 10:16:36 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:16:36 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:16:38 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:16:38 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:16:38 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:16:38 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:16:38 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:16:38 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:16:38 [DEBUG] checking for provider in "."
+2022/06/12 10:16:38 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:16:38 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:16:38 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:16:38 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:16:38 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 10:16:38 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:16:38 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:16:38 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 10:16:38 [DEBUG] checking for provider in "."
+2022/06/12 10:16:38 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:16:38 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:51:47 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:51:47 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:51:47 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:51:47 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:51:47 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:51:47 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:51:47 [DEBUG] checking for provider in "."
+2022/06/12 10:51:47 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:51:47 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:51:48 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:51:48 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:51:48 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:51:48 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:51:48 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:51:48 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:51:48 [DEBUG] checking for provider in "."
+2022/06/12 10:51:48 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:51:48 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:51:49 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:51:49 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:51:49 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 10:51:49 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:51:49 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:51:49 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 10:51:49 [DEBUG] checking for provider in "."
+2022/06/12 10:51:49 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:51:49 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:56:26 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:56:26 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:56:26 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:56:26 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:56:26 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:56:26 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:56:26 [DEBUG] checking for provider in "."
+2022/06/12 10:56:26 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:56:26 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:56:28 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:56:28 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:56:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:56:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:56:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:56:28 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:56:28 [DEBUG] checking for provider in "."
+2022/06/12 10:56:28 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:56:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:56:28 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:56:28 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:56:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 10:56:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:56:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:56:28 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 10:56:28 [DEBUG] checking for provider in "."
+2022/06/12 10:56:28 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:56:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:59:17 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:59:17 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:59:17 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:59:17 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:59:17 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:59:17 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:59:17 [DEBUG] checking for provider in "."
+2022/06/12 10:59:17 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:59:17 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:59:19 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:59:19 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:59:19 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 10:59:19 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:59:19 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:59:19 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 10:59:19 [DEBUG] checking for provider in "."
+2022/06/12 10:59:19 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:59:19 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 10:59:19 [INFO] Terraform version: 0.12.29  
+2022/06/12 10:59:19 [INFO] Go runtime version: go1.13.14
+2022/06/12 10:59:19 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 10:59:19 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 10:59:19 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 10:59:19 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 10:59:19 [DEBUG] checking for provider in "."
+2022/06/12 10:59:19 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 10:59:19 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:03:34 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:03:34 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:03:34 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:03:34 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:03:34 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:03:34 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:03:34 [DEBUG] checking for provider in "."
+2022/06/12 11:03:34 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:03:34 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:03:36 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:03:36 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:03:36 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:03:36 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:03:36 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:03:36 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:03:36 [DEBUG] checking for provider in "."
+2022/06/12 11:03:36 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:03:36 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:03:36 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:03:36 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:03:36 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:03:36 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:03:36 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:03:36 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:03:36 [DEBUG] checking for provider in "."
+2022/06/12 11:03:36 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:03:36 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:07:49 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:07:49 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:07:49 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:07:49 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:07:49 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:07:49 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:07:49 [DEBUG] checking for provider in "."
+2022/06/12 11:07:49 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:07:49 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:07:51 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:07:51 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:07:51 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:07:51 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:07:51 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:07:51 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:07:51 [DEBUG] checking for provider in "."
+2022/06/12 11:07:51 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:07:51 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:07:51 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:07:51 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:07:51 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:07:51 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:07:51 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:07:51 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:07:51 [DEBUG] checking for provider in "."
+2022/06/12 11:07:51 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:07:51 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:22:11 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:22:11 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:22:11 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:22:11 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:22:11 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:22:11 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:22:11 [DEBUG] checking for provider in "."
+2022/06/12 11:22:11 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:22:11 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:22:13 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:22:13 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:22:13 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:22:13 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:22:13 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:22:13 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:22:13 [DEBUG] checking for provider in "."
+2022/06/12 11:22:13 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:22:13 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:22:13 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:22:13 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:22:13 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:22:13 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:22:13 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:22:13 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:22:13 [DEBUG] checking for provider in "."
+2022/06/12 11:22:13 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:22:13 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:25:08 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:25:08 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:25:08 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:25:08 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:25:08 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:25:08 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:25:08 [DEBUG] checking for provider in "."
+2022/06/12 11:25:08 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:25:08 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:25:10 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:25:10 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:25:10 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:25:10 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:25:10 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:25:10 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:25:10 [DEBUG] checking for provider in "."
+2022/06/12 11:25:10 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:25:10 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:25:10 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:25:10 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:25:10 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:25:10 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:25:10 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:25:10 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:25:10 [DEBUG] checking for provider in "."
+2022/06/12 11:25:10 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:25:10 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:26:54 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:26:54 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:26:54 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:26:54 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:26:54 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:26:54 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:26:54 [DEBUG] checking for provider in "."
+2022/06/12 11:26:54 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:26:54 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:26:56 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:26:56 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:26:56 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:26:56 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:26:56 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:26:56 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:26:56 [DEBUG] checking for provider in "."
+2022/06/12 11:26:56 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:26:56 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:26:56 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:26:56 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:26:56 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:26:56 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:26:56 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:26:56 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:26:56 [DEBUG] checking for provider in "."
+2022/06/12 11:26:56 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:26:56 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:28:36 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:28:36 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:28:36 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:28:36 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:28:36 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:28:36 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:28:36 [DEBUG] checking for provider in "."
+2022/06/12 11:28:36 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:28:36 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:28:38 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:28:38 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:28:38 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:28:38 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:28:38 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:28:38 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:28:38 [DEBUG] checking for provider in "."
+2022/06/12 11:28:38 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:28:38 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:28:38 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:28:38 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:28:38 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:28:38 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:28:38 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:28:38 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:28:38 [DEBUG] checking for provider in "."
+2022/06/12 11:28:38 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:28:38 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:39:51 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:39:51 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:39:51 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:39:51 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:39:51 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:39:51 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:39:51 [DEBUG] checking for provider in "."
+2022/06/12 11:39:51 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:39:51 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:39:53 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:39:53 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:39:53 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:39:53 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:39:53 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:39:53 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:39:53 [DEBUG] checking for provider in "."
+2022/06/12 11:39:53 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:39:53 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:39:53 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:39:53 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:39:53 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:39:53 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:39:53 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:39:53 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:39:53 [DEBUG] checking for provider in "."
+2022/06/12 11:39:53 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:39:53 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:49:45 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:49:45 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:49:45 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:49:45 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:49:45 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:49:45 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:49:45 [DEBUG] checking for provider in "."
+2022/06/12 11:49:45 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:49:45 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:49:47 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:49:47 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:49:47 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 11:49:47 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:49:47 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:49:47 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 11:49:47 [DEBUG] checking for provider in "."
+2022/06/12 11:49:47 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:49:47 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 11:49:47 [INFO] Terraform version: 0.12.29  
+2022/06/12 11:49:47 [INFO] Go runtime version: go1.13.14
+2022/06/12 11:49:47 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 11:49:47 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 11:49:47 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 11:49:47 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 11:49:47 [DEBUG] checking for provider in "."
+2022/06/12 11:49:47 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 11:49:47 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:07:46 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:07:46 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:07:46 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:07:46 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:07:46 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:07:46 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:07:46 [DEBUG] checking for provider in "."
+2022/06/12 12:07:46 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:07:46 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:07:48 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:07:48 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:07:48 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:07:48 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:07:48 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:07:48 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:07:48 [DEBUG] checking for provider in "."
+2022/06/12 12:07:48 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:07:48 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:07:48 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:07:48 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:07:48 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 12:07:48 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:07:48 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:07:48 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 12:07:48 [DEBUG] checking for provider in "."
+2022/06/12 12:07:48 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:07:48 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:12:26 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:12:26 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:12:26 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:12:26 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:12:26 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:12:26 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:12:27 [DEBUG] checking for provider in "."
+2022/06/12 12:12:27 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:12:27 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:12:28 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:12:28 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:12:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:12:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:12:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:12:28 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:12:28 [DEBUG] checking for provider in "."
+2022/06/12 12:12:28 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:12:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:12:28 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:12:28 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:12:28 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 12:12:28 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:12:28 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:12:28 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 12:12:28 [DEBUG] checking for provider in "."
+2022/06/12 12:12:28 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:12:28 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:33:37 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:33:37 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:33:37 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:33:37 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:33:37 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:33:37 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:33:37 [DEBUG] checking for provider in "."
+2022/06/12 12:33:37 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:33:37 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:33:39 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:33:39 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:33:39 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:33:39 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:33:39 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:33:39 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:33:39 [DEBUG] checking for provider in "."
+2022/06/12 12:33:39 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:33:39 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:33:39 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:33:39 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:33:39 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 12:33:39 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:33:39 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:33:39 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 12:33:39 [DEBUG] checking for provider in "."
+2022/06/12 12:33:39 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:33:39 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:34:53 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:34:53 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:34:53 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:34:53 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:34:53 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:34:53 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:34:53 [DEBUG] checking for provider in "."
+2022/06/12 12:34:53 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:34:53 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:34:54 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:34:54 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:34:54 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 12:34:54 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:34:54 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:34:54 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 12:34:54 [DEBUG] checking for provider in "."
+2022/06/12 12:34:54 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:34:54 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 12:34:54 [INFO] Terraform version: 0.12.29  
+2022/06/12 12:34:54 [INFO] Go runtime version: go1.13.14
+2022/06/12 12:34:54 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 12:34:54 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 12:34:54 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 12:34:54 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 12:34:54 [DEBUG] checking for provider in "."
+2022/06/12 12:34:54 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 12:34:54 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 14:31:23 [INFO] Terraform version: 0.12.29  
+2022/06/12 14:31:23 [INFO] Go runtime version: go1.13.14
+2022/06/12 14:31:23 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 14:31:23 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 14:31:23 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 14:31:23 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 14:31:23 [DEBUG] checking for provider in "."
+2022/06/12 14:31:23 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 14:31:23 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 14:31:25 [INFO] Terraform version: 0.12.29  
+2022/06/12 14:31:25 [INFO] Go runtime version: go1.13.14
+2022/06/12 14:31:25 [INFO] CLI args: []string{"/usr/local/bin/terraform", "version", "-json"}
+2022/06/12 14:31:25 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 14:31:25 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 14:31:25 [INFO] CLI command args: []string{"version", "-json"}
+2022/06/12 14:31:25 [DEBUG] checking for provider in "."
+2022/06/12 14:31:25 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 14:31:25 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2022/06/12 14:31:25 [INFO] Terraform version: 0.12.29  
+2022/06/12 14:31:25 [INFO] Go runtime version: go1.13.14
+2022/06/12 14:31:25 [INFO] CLI args: []string{"/usr/local/bin/terraform", "-v"}
+2022/06/12 14:31:25 [DEBUG] Attempting to open CLI config file: /Users/miracle/.terraformrc
+2022/06/12 14:31:25 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2022/06/12 14:31:25 [INFO] CLI command args: []string{"version", "-v"}
+2022/06/12 14:31:25 [DEBUG] checking for provider in "."
+2022/06/12 14:31:25 [DEBUG] checking for provider in "/usr/local/bin"
+2022/06/12 14:31:25 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory

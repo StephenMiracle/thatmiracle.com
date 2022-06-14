@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "npm i && cd app && npm i && cd ../.infrastructure/terraform && npm i",
     "build": "cd app && npm run build",
+    "destroy": "cd .infrastructure/terraform && terraform destroy -auto-approve",
     "dev": "cd app && gatsby develop",
-    "deploy": "cd app && npm run build && cd ../.infrastructure/terraform && npm run deploy"
+    "deploy": "cd app && npm run build && cd ../.infrastructure/terraform && npm run deploy",
+    "deploy-stack": "cd .infrastructure/terraform  && npm run deploy"
   },
   "repository": {
     "type": "git",

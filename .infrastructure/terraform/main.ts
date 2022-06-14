@@ -7,24 +7,21 @@ import { Route53Record } from "./.gen/providers/aws/route53";
 import { AcmCertificate } from "./.gen/providers/aws/acm";
 import * as path from 'path';
 import * as glob from 'glob';
-import { TerraformOutput } from 'cdktf';
 import * as mime from 'mime-types';
 require('dotenv').config({ path: '../../.env' })
-const site = require ('../../site.js')
 
 class MyStack extends TerraformStack {
   constructor(scope: Construct, name: string) {
     super(scope, name);
-
     
     // assign AWS region
     new AwsProvider(this, 'aws', {
-      region: site.region
+      region: process.env.REGION || 'us-east-1'
     });
     // define resources here
     // Define AWS S3 bucket name
-    const BUCKET_NAME = site.domain;
-    const originId = `S3-${BUCKET_NAME}`;
+    const BUCKET_NAME = process.env.DOMAIN || '';
+    const originId = `S3-${BUCKET_NAME}-${Date.now()}`;
 
 
 
@@ -32,26 +29,40 @@ class MyStack extends TerraformStack {
       comment: BUCKET_NAME,
     })
 
-
-
-    const bucket = this.buckets(BUCKET_NAME, cloudfrontOriginAccessIdentity.id)
-    this.files(bucket, BUCKET_NAME)
     const cert = this.cert(BUCKET_NAME)
-    const cdn = this.cdn(BUCKET_NAME, originId, cloudfrontOriginAccessIdentity.cloudfrontAccessIdentityPath, bucket, cert)
-    this.route(cert, BUCKET_NAME, cdn, site.zoneId)
+    const env = process.env.ENV || ''
+
+    const bucket = this.buckets(BUCKET_NAME, cloudfrontOriginAccessIdentity.id, env);
+    this.files(bucket, BUCKET_NAME, env);
+    const cdn = this.cdn(BUCKET_NAME, originId, bucket, cert, env);
+    this.route(cert, BUCKET_NAME, cdn, process.env.ZONE_ID || '', env, null);
+
+    // WWW route
+    const wBucket = new S3Bucket(this, 'aws_redirect_s3_bucket_public', {
+      acl: 'public-read',
+      dependsOn: [bucket],
+      bucket: `www.${BUCKET_NAME}`,
+      forceDestroy: true,
+      website: {
+        redirectAllRequestsTo: BUCKET_NAME
+      }
+    })
+
+    const wCdn = this.cdn(`www.${BUCKET_NAME}`, originId, wBucket, cert, 'www')
+    this.route(cert, `www.${BUCKET_NAME}`, wCdn, process.env.ZONE_ID || '', 'www', wBucket)
   }
 
 
 
 
-  files(bucket: S3Bucket, bucketName: string): void {
+  files(bucket: S3Bucket, bucketName: string, env: string): void {
     const files = glob.sync('../../app/public/**/*', { absolute: false, nodir: true });
     let i = 0;
 
 
     // Create bucket object for each file
     for (const file of files) {
-      new S3BucketObject(this, `aws_s3_bucket_object_${path.basename(file)}-${i}`, {
+      new S3BucketObject(this, env + `_aws_s3_bucket_object_${path.basename(file)}-${i}`, {
         dependsOn: [bucket],            // Wait untill the bucket is not created
         key: file.replace(`../../app/public/`, ''),       // Using relative path for folder structure on S3
         bucket: bucketName,
@@ -68,7 +79,8 @@ class MyStack extends TerraformStack {
 
   cert(domain: string): AcmCertificate {
     return new AcmCertificate(this, "cert", {
-      domainName: domain,
+      domainName: `*.${domain}`,
+      subjectAlternativeNames: [domain, 'www.' + domain],
       validationMethod: "DNS",
       lifecycle: {
         createBeforeDestroy: true,
@@ -78,28 +90,28 @@ class MyStack extends TerraformStack {
 
 
 
-  route(cert: AcmCertificate, domain: string, cdn: CloudfrontDistribution, zoneId: string): Route53Record {
-    return  new Route53Record(this, "dns-record", {
+  route(cert: AcmCertificate, domain: string, cdn: CloudfrontDistribution | null, zoneId: string, env: string, bucket: S3Bucket | null): Route53Record {
+    return  new Route53Record(this, env + "_dns-record", {
       allowOverwrite: true,
       dependsOn: [cert],
       name: domain,
       type: "A",
       zoneId: zoneId,
       alias: [{
-        name: cdn.domainName,
-        zoneId: cdn.hostedZoneId,
+        name: cdn ? cdn.domainName : bucket?.bucketDomainName || '',
+        zoneId: cdn ? cdn.hostedZoneId : bucket?.hostedZoneId || '',
         evaluateTargetHealth: false
       }]
     });
   }
 
-  cdn(bucketName: string, originId: string, identityPath: string, bucket: S3Bucket, cert: AcmCertificate): CloudfrontDistribution {
+  cdn(bucketName: string, originId: string, bucket: S3Bucket, cert: AcmCertificate, env: string): CloudfrontDistribution {
 
-    const cloudFrontDistribution = new CloudfrontDistribution(this, `aws_cloudfront_${bucketName}`, {
+    const cloudFrontDistribution = new CloudfrontDistribution(this, env + `_aws_cloudfront_${bucketName}`, {
       enabled: true,
       dependsOn: [bucket, cert],
-      defaultRootObject: 'index.html',
       aliases: [bucketName],
+      defaultRootObject: 'index.html',
       customErrorResponse: [{
         errorCode: 404,
         responseCode: 200,
@@ -108,8 +120,13 @@ class MyStack extends TerraformStack {
       origin: [{
         originId: originId,
         domainName: bucket.bucketDomainName,
-        s3OriginConfig: {
-          originAccessIdentity: identityPath
+        customOriginConfig: {
+          originSslProtocols: ['TLSv1.2'],
+          originReadTimeout: 30,
+          originKeepaliveTimeout: 5,
+          httpPort: 80,
+          httpsPort: 443,
+          originProtocolPolicy: 'http-only'
         }
       }],
       defaultCacheBehavior: {
@@ -136,29 +153,22 @@ class MyStack extends TerraformStack {
       },
     });
 
-
-    // Output the cloudfront url to access the website
-    new TerraformOutput(this, 'cloudfront_website_endpoint', {
-      description: 'CloudFront URL',
-      value: `https://${cloudFrontDistribution.domainName}`
-    });
-
     return cloudFrontDistribution;
   }
 
 
 
-  buckets(bucketName: string, id: string): S3Bucket {
+  buckets(bucketName: string, id: string, env: string): S3Bucket {
     // Create bucket with public access
-    const bucket = new S3Bucket(this, 'aws_s3_bucket', {
+    const bucket = new S3Bucket(this, env + '_aws_s3_bucket', {
       acl: 'public-read',
       website: {
         indexDocument: 'index.html',
-        errorDocument: 'index.html',
+        errorDocument: 'index.html'
       },
       tags: {
         'Terraform': "true",
-        "Environment": "dev"
+        "Environment": env
       },
       bucket: bucketName,
       policy: `{
@@ -178,7 +188,7 @@ class MyStack extends TerraformStack {
             ]
           }
         ]
-      }`,
+      }`
     });
 
 
