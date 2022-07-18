@@ -36,7 +36,7 @@ export default function Page() {
           </div>
           <div className="mt-8 mb-24 lg:max-w4xl mx-auto">
             <p className="text-white text-4xl mb-2">Who am I?</p>
-            <p className="text-white text-3xl">I help frustrated software product leaders confidently <span className="text-secondary">deploy well-architected integrations that deliver confidence</span> in security, uptime, performance & results. Build systems with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications on all processes to provide confidence & satisfaction for business users, customers & all stakeholders. </p>
+            <p className="text-white text-3xl">I help frustrated software product leaders <span className="text-secondary">deploy well-architected integrations that deliver confidence</span> in security, uptime, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
           </div>
           <div className="flex flex-col md:flex-row justify-center">
             <div className="w-full md:w-1/2 lg:w-1/3">
