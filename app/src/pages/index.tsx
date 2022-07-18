@@ -9,14 +9,27 @@ export default function Page() {
     <div style={{ background: "#1f213a", minHeight: "100vh" }}>
       <div className="container mx-auto pt-4 lg:pt-20 py-4 px-4 max-w-full">
         <Seo title="Stephen Miracle" />
-        <div className="lg:max-w-4xl mx-auto text-white lg:mt-16">
-          <p className="font-cursive text-xl lg:text-4xl leading-loose">Hi! Stephen "that" Miracle here<span className="text-secondary">.</span></p> 
-          <p className="max-w-3xl mx-auto text-xl lg:text-5xl mt-16 leading-loose">How much is your software integration & delivery efforts costing you?</p>
-          <div className="w-full flex flex-row mt-20 max-w-lg text-center mx-auto mb-24">
-          <p className="xs:w-1/2 lg:w-auto max-w-3xl mx-auto text-xl lg:text-3xl leading-loose">I can help you with that.</p>
-          <p className="xs:w-1/2 lg:w-auto max-w-3xl mx-auto text-lg leading-relaxed">
-            <a className="font-cursive max-w-3xl mx-auto btn btn-outline border-secondary text-secondary border-2 py-2 px-4" href="#start">Work with Me</a>
-          </p>
+        <div className="mx-auto  lg:mt-16 text-white text-center mb-4 lg:max-w-3xl">
+              <p className="font-cursive text-xl lg:text-4xl leading-loose">Hi! Stephen "that" Miracle here<span className="text-secondary">.</span></p> 
+        </div>
+        <div className="lg:max-w-5xl mx-auto text-white">
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-2/5">
+              <img 
+                src="/images/me.jpeg" 
+                alt="Stephen Miracle" 
+                style={{width: '100%', maxWidth: '500px', height: '350px'}}
+                className="rounded-full w-full h-full object-cover" />
+            </div>
+            <div className="lg:px-6">
+              <p className="max-w-3xl mx-auto text-xl lg:text-5xl mt-16 leading-loose">How much is your software integration & delivery efforts costing you?</p>
+              <div className="w-full flex flex-row mt-20 max-w-lg text-center mx-auto mb-24">
+              <p className="xs:w-1/2 lg:w-auto max-w-3xl mx-auto text-xl lg:text-3xl leading-loose">I can help you with that.</p>
+              <p className="xs:w-1/2 lg:w-auto max-w-3xl mx-auto text-lg leading-relaxed">
+                <a className="font-cursive max-w-3xl mx-auto btn btn-outline border-secondary text-secondary border-2 py-2 px-4" href="#start">Work with Me</a>
+              </p>
+            </div>
+          </div>
           </div>
           <p className="before:content-[' '] before:block before:h-1 before:mb-10 before:mx-auto before:max-w-lg before:bg-secondary after:content-[' '] after:block after:h-1 after:mt-10 after:mx-auto after:max-w-lg text-center after:bg-secondary text-lg lg:text-4xl leading-relaxed my-24">
             Stop worrying and feel confident in your software integrations, deployments & platform.</p>
