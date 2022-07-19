@@ -33,47 +33,21 @@ export default function Page() {
           <div className=" px-6 lg:max-w-3xl mx-auto mt-8 lg:mt-16 mb-24">
             <p className="text-primary font-cursive px-6 py-6 bg-white max-w-4xl mx-auto text-xl text-2lg lg:text-3xl lg:leading-relaxed">Generate <strong><span className="bg-secondary">5X increase</span> in lifetime customer value</strong> and a <strong><span className="bg-secondary">64%</span> increase in productivity</strong> while <strong>reducing operational costs more than <span className="bg-secondary">74%</span> with better software integrations.</strong></p>
           </div>
-          <div className="mt-8 mb-24 lg:max-w4xl mx-auto">
+          <div className="mt-8 mb-20 lg:max-w4xl mx-auto">
             <p className="text-white text-4xl mb-2">Who am I?</p>
-            <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated software product leaders <span className="bg-secondary text-primary">deploy well-architected integrations that deliver confidence</span> in security, uptime, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
+            <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated technology product leaders <span className="bg-secondary text-primary">deploy well-architected cloud-native integrations that deliver confidence</span> in security, uptime, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
           </div>
-          <p className="mb-8 max-w-4xl mx-auto text-2xl lg:text-5xl text-center leading-relaxe">Experience includes<span className="text-secondary">...</span></p>
-          <div className="flex flex-col md:flex-row justify-center">
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <p className="bold text-3xl">Finance & Payments</p>
-              <p className="hidden text-lg leading-tight">Online checkout, ERP, bank transfer, payment gateways, point of sale, crypto, etc</p>
+          <div className="flex mb-32 flex-col md:flex-row text-center justify-center">
+            <div className="w-full md:w-1/3">
+              <img className="block mx-auto" src="/images/azure.png" alt="Azure" style={{height: '100px'}} />
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <p className="bold text-3xl">Marketing & Analytics</p>
-              <p className="hidden text-lg leading-tight">Content</p>
+            <div className="w-full md:w-1/3 text-center ">
+              <img className="block mx-auto" src="/images/aws.png" style={{height: '100px'}} alt="AWS"  />
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <p className="bold text-3xl">Supply Chain</p>
-              <p className="hidden text-lg leading-tight">Content</p>
+            <div className="w-full md:w-1/3">
+              <img className="block mx-auto" src="/images/gcp.png" alt="GCP" style={{height: '100px'}} />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-center mt-9">
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <p className="bold text-3xl">Cloud Platforms</p>
-              <p className="hidden text-lg leading-tight">Online checkout, ERP, bank transfer, payment gateways, point of sale, crypto, web3, etc</p>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <p className="bold text-3xl">Devops & Delivery</p>
-              <p className="hidden text-lg leading-tight">Content</p>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <p className="bold text-3xl">Data pipelines & ETL</p>
-              <p className="hidden text-lg leading-tight">Content</p>
-            </div>
-          </div>
-        </div>
-        <div className="lg:max-w-5xl mx-auto text-white my-32">
-          <p className="max-w-6xl mx-auto text-2xl lg:text-5xl leading-relaxe mb-8"><span className="text-secondary">></span> Preferred Industries</p>
-          <ul className="flex flex-col md:flex-row justify-center">
-            <li className="text-lg lg:text-3xl mb-8 text-center md:w-1/4 lg:w-1/3">Healthcare Tech</li>
-            <li className="text-lg lg:text-3xl mb-8 text-center md:w-1/4 lg:w-1/3">Food & Ag Tech</li>
-            <li className="text-lg lg:text-3xl mb-8 text-center md:w-1/4 lg:w-1/3">FinTech</li>
-          </ul>
         </div>
         <div className="lg:max-w-4xl mx-auto text-white lg:mt-24 mt-10">
           <p className=" after:content-[' '] after:block after:h-1 after:mt-6 after:mx-auto after:max-w-lg after:bg-secondary max-w-4xl mx-auto text-2xl lg:text-6xl text-center leading-relaxe">Here's some interesting info</p>
@@ -110,9 +84,9 @@ export default function Page() {
               </div> 
             </div> 
           </div>
-          <div className="lg:block max-w-5xl mx-auto justify-center">
+          <div className="lg:block max-w-3xl mx-auto justify-center">
             <p className="before:content-[' '] before:block before:h-1 before:mb-10 before:mx-auto before:max-w-lg before:bg-secondary after:content-[' '] after:block after:h-1 after:mt-10 after:mx-auto after:max-w-lg text-center after:bg-secondary text-lg lg:text-4xl leading-relaxed my-24">
-              Stop worrying and feel confident in your software integrations, deployments & platform.
+              Stop worrying about integrations and feel confident in your software.
             </p>
           </div>
         </div>
