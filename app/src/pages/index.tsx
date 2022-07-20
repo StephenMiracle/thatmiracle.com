@@ -36,7 +36,7 @@ export default function Page() {
           </div>
           <div className="mt-8 mb-20 lg:max-w4xl mx-auto">
             <p className="text-white text-4xl mb-2"><span className="text-secondary inline-block text-3xl mr-3">></span> Who am I?</p>
-            <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated cloud-native technology teams <span className="bg-secondary text-primary">deploy well-architected cloud-native integrations that deliver confidence</span> in security, uptime, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
+            <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated cloud software product teams <span className="bg-secondary text-primary">deploy well-architected cloud-native integration systems that deliver confidence</span> in security, uptime, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
           </div>
           <div className="flex mb-32 flex-col md:flex-row text-center justify-center">
             <div className="w-full md:w-1/3">
@@ -51,7 +51,7 @@ export default function Page() {
           </div>
           <div className="mt-8 mb-20 lg:max-w4xl mx-auto">
             <p className="text-white text-5xl mb-2"><span className="text-secondary inline-block text-3xl mr-3">></span> What do I do?</p>
-            <p className="text-white text-xl lg:text-3xl font-cursive">I connect complicated software systems together. Officially, you can call me an "Integration Architect". But, that isn't very descriptive. What I really do is design, plan & lead integration projects that require working with many different pieces. I enjoy making complex things work together. </p>
+            <p className="text-white text-xl lg:text-3xl font-cursive">I connect complicated software systems together. Officially, you can call me an "Integration Architect"... but that isn't very descriptive. What I really do is design, plan & lead integration projects that require working with many different pieces. I enjoy making complex things work together. </p>
           </div>
         </div>
         <div className="lg:max-w-3xl mx-auto text-white lg:mt-24 mt-10">
