@@ -21,8 +21,8 @@ export default ({ siteTitle, color, hideLogoOnLoad }) => {
   
   return (
   <header className="px-8 fixed w-full">
-    <div className="flex items-center justify-between  py-8">
-      <Link className={`text-${color} text-2xl ${showLogo} transition-opacity`} to="/">
+    <div className="flex items-center justify-between  py-2 md:py-8">
+      <Link className={`text-${color} text-lg text-2xl ${showLogo} transition-opacity`} to="/">
         Stephen <em className="font-cursive text-secondary">"that"</em> Miracle
       </Link>
       {/* <nav>

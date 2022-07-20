@@ -34,23 +34,23 @@ export default function Page() {
           <div className=" px-6 lg:max-w-3xl mx-auto mt-8 lg:mt-16 mb-24">
             <p className="text-primary font-cursive px-6 py-6 bg-white max-w-4xl mx-auto text-xl text-2lg lg:text-3xl lg:leading-relaxed">Generate a <strong><span className="bg-secondary">5X increase</span> in lifetime customer value</strong> and a <strong><span className="bg-secondary">64%</span> increase in productivity</strong> while <strong>reducing operational costs more than <span className="bg-secondary">74%</span> with better software integrations.</strong></p>
           </div>
-          <div className="mt-8 mb-20 lg:max-w4xl mx-auto">
-            <p className="text-white text-4xl mb-2"><span className="text-secondary inline-block text-3xl mr-3">></span> Who am I?</p>
+          <div className="mt-8 mb-8 md:mb-20 lg:max-w4xl mx-auto">
+            <p className="text-white  text-3xl md:text-5xl mb-2"><span className="text-secondary text-3xl mr-3 hidden md:inline-block">></span> Who am I?</p>
             <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated cloud-native technology teams <span className="bg-secondary text-primary">deploy well-architected integration systems that deliver confidence</span> in security, uptime, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
           </div>
-          <div className="flex mb-32 flex-col md:flex-row text-center justify-center">
-            <div className="w-full md:w-1/3">
+          <div className="flex mb-16 md:mb-32 flex-col md:flex-row text-center justify-center">
+            <div className="w-full md:w-1/3 py-4">
               <img className="block mx-auto" src="/images/azure.png" alt="Azure" style={{height: '100px'}} />
             </div>
-            <div className="w-full md:w-1/3 text-center ">
+            <div className="w-full md:w-1/3 text-center  py-4">
               <img className="block mx-auto" src="/images/aws.png" style={{height: '100px'}} alt="AWS"  />
             </div>
-            <div className="w-full md:w-1/3">
+            <div className="w-full md:w-1/3 py-4">
               <img className="block mx-auto" src="/images/gcp.png" alt="GCP" style={{height: '100px'}} />
             </div>
           </div>
           <div className="mt-8 mb-20 lg:max-w4xl mx-auto">
-            <p className="text-white text-5xl mb-2"><span className="text-secondary inline-block text-3xl mr-3">></span> What do I do?</p>
+            <p className="text-white  text-3xl md:text-5xl mb-2"><span className="text-secondary  hidden md:inline-block text-3xl mr-3">></span> Integrations that Inspire Confidence</p>
             <p className="text-white text-xl lg:text-3xl font-cursive">I connect complicated software systems together. Officially, you can call me an "Integration Architect"... but that isn't very descriptive. What I really do is design, plan & lead integration projects that require working with many different pieces. I enjoy making complex things work together. </p>
           </div>
         </div>
@@ -64,26 +64,26 @@ export default function Page() {
           </ul>
         </div>
         <div className="mt-20 mb-10 lg:max-w-5xl mx-auto">
-          <p className="text-white text-5xl mb-2"><span className="text-secondary inline-block text-3xl mr-3">></span> Where can you find my fingerprints?</p>
+          <p className="text-white text-3xl md:text-5xl mb-2"><span className="text-secondary  hidden md:inline-block text-3xl mr-3">></span>Industry Solutions</p>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center mb-8 md:mb-20 max-w-6xl mx-auto">
+          <div className="text-white text-xl mb-4 md:w-1/2 md:px-4">
+            <p className="text-xl md:text-3xl">Food & Ag Tech</p>
+            <p className="text-lg md:text-xl text-left">Food & agtech is a passion of mine growing up in a family of farming. I love tech that connects the supply chain from the farm, to the brand, retailer, restaurant and all the way to the consumer.</p>
+          </div>
+          <div className="text-white text-xl md:w-1/2  md:px-4">
+            <p className="text-xl md:text-3xl">Healthcare Tech</p>
+            <p className="text-lg md:text-xl text-left">Healthcare Tech is a unique beast when it comes to integrations. Data privacy, security & interoperability is no joke. These types of complex integrations is where I love to live.</p>
+          </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center mb-20 max-w-6xl mx-auto">
-          <div className="text-white text-xl md:w-1/2 px-4">
-            <p className="text-3xl">Food & Ag Tech</p>
-            <p className="text-xl text-left">Food & agtech is a passion of mine growing up in a family of farming. I love tech that connects the supply chain from the farm, to the brand, retailer, restaurant and all the way to the consumer.</p>
+          <div className="text-white text-xl mb-4 md:w-1/2  md:px-4">
+            <p className="text-xl md:text-3xl">Fintech</p>
+            <p className="text-lg md:text-xl text-left">I've been able to work on some really amazing projects in mortgage, investment, crypto, banking & ecommerce while living in a large financial hub. These projects are enjoyable and require significant testing & attention to detail.</p>
           </div>
-          <div className="text-white text-xl md:w-1/2 px-4">
-            <p className="text-3xl">Healthcare Tech</p>
-            <p className="text-xl text-left">Healthcare Tech is a unique beast when it comes to integrations. Data privacy, security & interoperability is no joke. These types of complex integrations is where I love to live.</p>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center mb-20 max-w-6xl mx-auto">
-          <div className="text-white text-xl md:w-1/2 px-4">
-            <p className="text-3xl">Fintech</p>
-            <p className="text-xl text-left">I've been able to work on some really amazing projects in mortgage, investment, crypto, banking & ecommerce while living in a large financial hub. These projects are enjoyable and require significant testing & attention to detail.</p>
-          </div>
-          <div className="text-white text-xl md:w-1/2 px-4">
-            <p className="text-3xl">Martech & Adtech</p>
-            <p className="text-xl text-left">Analytics, data, market automation, emails, CMS, advertising, what else? This space is massive and requires a very well orchestrated integration system. Be smart on how to make it fit.</p>
+          <div className="text-white text-xl md:w-1/2  md:px-4">
+            <p className="text-xl md:text-3xl">Martech & Adtech</p>
+            <p className="text-lg md:text-xl text-left">Analytics, data, market automation, emails, CMS, advertising, what else? This space is massive and requires a very well orchestrated integration system. Be smart on how to make it fit.</p>
           </div>
         </div>
         </div>
