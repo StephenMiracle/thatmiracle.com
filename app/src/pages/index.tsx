@@ -54,9 +54,9 @@ export default function Page() {
             <p className="text-white text-xl lg:text-3xl font-cursive">I connect complicated software systems together. Officially, you can call me an "Integration Architect"... but that isn't very descriptive. What I really do is design, plan & lead integration projects that require working with many different pieces. I enjoy making complex things work together. </p>
           </div>
         </div>
-        <div className="lg:max-w-3xl mx-auto text-white lg:mt-24 mt-10">
-          <p className=" after:content-[' '] after:block after:h-1 after:mt-6 after:mx-auto after:max-w-lg after:bg-secondary max-w-4xl mx-auto text-2xl lg:text-6xl text-center leading-relaxe">Here's some interesting info</p>
-          <ul>
+        <div className="lg:max-w-5xl mx-auto bg-white px-6 py-6 lg:mt-24 mt-10">
+          <p className="max-w-3xl mx-auto after:content-[' '] after:block after:h-1 after:mt-6 after:mx-auto after:max-w-lg after:bg-secondary max-w-4xl mx-auto text-2xl lg:text-6xl text-center leading-relaxe">Here's some interesting info</p>
+          <ul className="max-w-3xl mx-auto">
             <li className="list-disc font-cursive text-lg lg:text-3xl leading-relaxed my-8">Over <span className="text-secondary">80%</span> of enterprise Business Operations leaders say data integration is critical to ongoing operations.</li>
             <li className="list-disc font-cursive text-lg lg:text-3xl leading-relaxed my-8"><span className="text-secondary">67%</span> of enterprises are relying on data integration to support analytics and BI platforms today, and 24% are planning to in the next 12 months.</li>
             <li className="list-disc font-cursive text-lg lg:text-3xl leading-relaxed my-8"><span className="text-secondary">65%</span> of organizations prefer to <span className="bg-secondary text-primary">deploy data integration solutions from cloud platforms</span> or hybrid cloud.</li>
