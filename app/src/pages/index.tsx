@@ -35,7 +35,7 @@ export default function Page() {
             <p className="text-primary font-cursive px-6 py-6 bg-white max-w-4xl mx-auto text-xl text-2lg lg:text-3xl lg:leading-relaxed">Generate a <strong><span className="bg-secondary">5X increase</span> in lifetime customer value</strong> and a <strong><span className="bg-secondary">64%</span> increase in productivity</strong> while <strong>reducing operational costs more than <span className="bg-secondary">74%</span> with better software integrations.</strong></p>
           </div>
           <div className="mt-8 mb-8 md:mb-20 lg:max-w4xl mx-auto">
-            <p className="text-white  text-3xl md:text-5xl mb-2"><span className="text-secondary text-3xl mr-3 hidden md:inline-block">></span> Who am I?</p>
+            <p className="text-white  text-3xl md:text45xl mb-2"><span className="text-secondary text-3xl mr-3 hidden md:inline-block">></span> Who am I?</p>
             <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated cloud-native technology teams <span className="bg-secondary text-primary">deploy well-architected integration systems that deliver confidence</span> in security, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
           </div>
           <div className="flex mb-16 md:mb-32 flex-col md:flex-row text-center justify-center">
@@ -50,7 +50,7 @@ export default function Page() {
             </div>
           </div>
           <div className="mt-8 mb-20 lg:max-w4xl mx-auto">
-            <p className="text-white  text-3xl md:text-5xl mb-2"><span className="text-secondary  hidden md:inline-block text-3xl mr-3">></span> Integrations that Inspire Confidence</p>
+            <p className="text-white  text-3xl md:text-4xl mb-2"><span className="text-secondary  hidden md:inline-block text-3xl mr-3">></span> Integrations that Inspire Confidence</p>
             <p className="text-white text-xl lg:text-3xl font-cursive">I connect complicated software systems together. Officially, you can call me an "Integration Architect"... but that isn't very descriptive. What I really do is design, plan & lead integration projects that require working with many different pieces. I enjoy making complex things work together. </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function Page() {
           </ul>
         </div>
         <div className="mt-20 mb-10 lg:max-w-5xl mx-auto">
-          <p className="text-white text-3xl md:text-5xl mb-2"><span className="text-secondary  hidden md:inline-block text-3xl mr-3">></span>Industry Solutions</p>
+          <p className="text-white text-3xl md:text-4xl mb-2"><span className="text-secondary  hidden md:inline-block text-3xl mr-3">></span>Industry Solutions</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center mb-8 md:mb-20 max-w-6xl mx-auto">
           <div className="text-white text-xl mb-4 md:w-1/2 md:px-4">
