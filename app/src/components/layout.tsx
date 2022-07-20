@@ -37,7 +37,7 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
                 <p className="font-cursive max-w-2xl mx-auto text-2xl lg:text-5xl leading-relaxe">Work With Me</p>
                 <p className="max-w-2xl mx-auto text-lg lg:text-xl leading-relaxed mt-8">
                   <strong>Schedule an intro call</strong><br />
-                  Ready to discuss your product integration & implementation requirements? Schedule your intro call today with the link below. Discuss the current state of your product integration architecture and your future goals. We'll share our services to see what may best align with your needs.
+                  Ready to discuss your product integration & implementation requirements? Schedule your intro call today with the link below. We'll discuss the current state of your product integration architecture, your future goals, and determine whether we should continue into the strategy & design sessions.
                 </p>
                 <p className="max-w-2xl mx-auto text-lg leading-relaxed my-16">
                   <a target="_blank" className="font-cursive max-w-3xl mx-auto btn btn-outline bg-primary text-white border-2 py-4 px-10" href="https://bit.ly/3OgGrQH">SCHEDULE CALL</a>
