@@ -2,8 +2,8 @@
 require('dotenv').config({ path: '../.env' })
 module.exports = {
   siteMetadata: {
-    title: `Stephen Miracle`,
-    description: ``,
+    title: `Stephen Miracle - Get confident with your integrations`,
+    description: `I help overwhelmed software product leaders get confident & successful with their integrations.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
