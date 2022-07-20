@@ -28,8 +28,7 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
 
   const handleFormSubmit = (e) => {
     e.preventDefault(); 
-    console.log({firstName, lastName, email})
-    setHasSent(true); alert("test test")
+    setHasSent(true);
   }
 
   return (
