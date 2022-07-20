@@ -26,6 +26,12 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
     }
   `)
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); 
+    console.log({firstName, lastName, email})
+    setHasSent(true); alert("test test")
+  }
+
   return (
     <>
       <div style={{backgroundColor}}>
@@ -38,14 +44,14 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
             }}
           >
             <div className="bg-white border-t-secondary border-t-4 px-4 pb-12">
-              <div id="start" className="max-w-5xl mx-auto mt-16 flex flex-column md:flex-row">
+              <div id="start" className="max-w-5xl mx-auto mt-16 md:flex flex-col md:flex-row">
                 <div className="md:w-1/2">
                 <p className="font-cursive max-w-2xl mx-auto text-2xl lg:text-4xl leading-relaxe">Step 1: Get Integration Clarity</p>
                 <p className="max-w-2xl mx-auto text-lg lg:text-xl leading-relaxed mt-8">
                   <strong>Download My Free Integration Architecture & Budgeting Template</strong><br />
                   Start working on your integration requirements & get a jumpstart on your design, budget & plan. Download this free template & get started today.
                 </p>
-                <ul className="text-xl mt-6">
+                <ul className="text-xl mt-6 px-6">
                   <li className="mb-4 list-disc ">
                     Establish the business requirements.
                   </li>
@@ -60,10 +66,10 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
                   </li>
                 </ul>
                 </div>
-                <div className="md:w-1/2 md:px-8">
+                <div className="md:w-1/2 md:px-8 pt-6">
                   {
                     !hasSent && (
-                      <form onSubmit={() => {setHasSent(true)}} className={hasSent ? 'hidden' : 'block'}>
+                      <form  onSubmit={handleFormSubmit} className={hasSent ? 'hidden' : 'block'}>
                         <div className="mb-4">
                           <label 
                             className="block text-gray-700 text-lg font-bold mb-2" 
@@ -91,7 +97,7 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
                           <input value={email} onChange={(evt) => {setEmail(evt.target.value)}} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email: jack@needshelp.com" />
                         </div>
                         <div className="mt-6">
-                          <button className="shadow font-cursive bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 block w-full text-2xl focus:outline-none focus:shadow-outline" type="button">
+                          <button className="shadow font-cursive bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 block w-full text-2xl focus:outline-none focus:shadow-outline" type="submit">
                             Download Template
                           </button>
                         </div>
@@ -104,7 +110,7 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
                         <p className="text-center text-gray-700 text-2lg font-bold mb-2">
                           Thank you for your interest in my integration template.
                         </p>
-                        <p className="text-center text-gray-700 text-lg font-bold mb-2">
+                        <p className="text-center text-gray-700 text-lg mb-2">
                           You should be receiving an email from me soon with the template and how to use. If you don't see it, please check your spam folder. Feel free to email me stephen@thatmiracle.com with any questions.
                         </p>
                       </div>
