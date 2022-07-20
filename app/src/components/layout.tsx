@@ -11,6 +11,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 
 export default function layout ({ children, headerFontColor, backgroundColor, hideLogoOnLoad }) {
+  const [hasSent, setHasSent] = React.useState(false)
+  const [firstName, setFirstName] = React.useState('')
+  const [lastName, setLastName] = React.useState('')
+  const [email, setEmail] = React.useState('')
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,16 +37,80 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
               fontSize: `var(--font-sm)`,
             }}
           >
-            <div className="bg-white border-t-secondary border-t-4 px-4">
-              <div id="start" className="lg-max-w-3xl mx-auto mt-16">
-                <p className="font-cursive max-w-2xl mx-auto text-2xl lg:text-5xl leading-relaxe">Work With Me</p>
+            <div className="bg-white border-t-secondary border-t-4 px-4 pb-12">
+              <div id="start" className="max-w-5xl mx-auto mt-16 flex flex-column md:flex-row">
+                <div className="md:w-1/2">
+                <p className="font-cursive max-w-2xl mx-auto text-2xl lg:text-4xl leading-relaxe">Step 1: Get Integration Clarity</p>
                 <p className="max-w-2xl mx-auto text-lg lg:text-xl leading-relaxed mt-8">
-                  <strong>Schedule an intro call</strong><br />
-                  Ready to discuss your product integration & implementation requirements? Schedule your intro call today with the link below. We'll discuss the current state of your product integration architecture, your future goals, and determine whether we should continue into the strategy & design sessions.
+                  <strong>Download My Free Integration Architecture & Budgeting Template</strong><br />
+                  Start working on your integration requirements & get a jumpstart on your design, budget & plan. Download this free template & get started today.
                 </p>
-                <p className="max-w-2xl mx-auto text-lg leading-relaxed my-16">
-                  <a target="_blank" className="font-cursive max-w-3xl mx-auto btn btn-outline bg-primary text-white border-2 py-4 px-10" href="https://bit.ly/3OgGrQH">SCHEDULE CALL</a>
-                </p>
+                <ul className="text-xl mt-6">
+                  <li className="mb-4 list-disc ">
+                    Establish the business requirements.
+                  </li>
+                  <li className="mb-4 list-disc ">
+                    Discover your available options.
+                  </li>
+                  <li className="mb-4 list-disc ">
+                    Determine the budget & timeline.
+                  </li>
+                  <li className="list-disc ">
+                    Prepare for next steps.
+                  </li>
+                </ul>
+                </div>
+                <div className="md:w-1/2 md:px-8">
+                  {
+                    !hasSent && (
+                      <form onSubmit={() => {setHasSent(true)}} className={hasSent ? 'hidden' : 'block'}>
+                        <div className="mb-4">
+                          <label 
+                            className="block text-gray-700 text-lg font-bold mb-2" 
+                            htmlFor="firstName">
+                            First Name 
+                          </label>
+                          <input 
+                            value={firstName} 
+                            onChange={(evt) => {setFirstName(evt.target.value)}} 
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                            id="firstName" 
+                            type="text" 
+                            placeholder="First Name: Jack" />
+                        </div>
+                        <div className="mb-4">
+                          <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="lastName">
+                            Last Name
+                          </label>
+                          <input value={lastName} onChange={(evt) => {setLastName(evt.target.value)}} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastName" type="text" placeholder="Last Name: Doe" />
+                        </div>
+                        <div className="mb-4">
+                          <label className="block text-gray-700 text-lg font-bold mb-2" htmlFor="email">
+                            Email
+                          </label>
+                          <input value={email} onChange={(evt) => {setEmail(evt.target.value)}} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email: jack@needshelp.com" />
+                        </div>
+                        <div className="mt-6">
+                          <button className="shadow font-cursive bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 block w-full text-2xl focus:outline-none focus:shadow-outline" type="button">
+                            Download Template
+                          </button>
+                        </div>
+                      </form>
+                    )
+                  }
+                  {
+                    hasSent && (
+                      <div className={hasSent ? 'block' : 'hidden'}>
+                        <p className="text-center text-gray-700 text-2lg font-bold mb-2">
+                          Thank you for your interest in my integration template.
+                        </p>
+                        <p className="text-center text-gray-700 text-lg font-bold mb-2">
+                          You should be receiving an email from me soon with the template and how to use. If you don't see it, please check your spam folder. Feel free to email me stephen@thatmiracle.com with any questions.
+                        </p>
+                      </div>
+                    )
+                  }
+                </div>
               </div>
             </div>
           </footer>
