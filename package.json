@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/StephenMiracle/thatmiracle.com#readme",
   "dependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "gatsby-plugin-google-tagmanager": "^4.19.0"
   }
 }
