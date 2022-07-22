@@ -10,10 +10,10 @@ export default function Page() {
     <Layout hideLogoOnLoad="true" backgroundColor="#1f213a" headerFontColor="white">
       <div className="container mx-auto pt-4 pt-20 py-4 px-4 max-w-full">
         <Seo title="Stephen Miracle" />
-        <div className="mx-auto  lg:mt-16 text-white text-center mb-4 lg:max-w-3xl">
+        <div className="mx-auto  lg:mt-20 text-white text-center mb-4 lg:max-w-3xl">
               <p className="font-cursive text-2xl lg:text-4xl leading-loose">Hi! Stephen <em className="font-cursive text-secondary">"that"</em>  Miracle here<span className="text-secondary">.</span></p> 
         </div>
-        <div className="lg:max-w-5xl mx-auto text-white">
+        <div className="lg:max-w-5xl mx-auto text-white mt-12">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2">
               <img 
@@ -31,12 +31,19 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className=" px-6 lg:max-w-3xl mx-auto mt-8 lg:mt-16 mb-24">
+          <div className=" px-6 lg:max-w-3xl mx-auto mt-8 lg:mt-32 mb-24">
             <p className="text-primary font-cursive px-6 py-6 bg-white max-w-4xl mx-auto text-xl text-2lg lg:text-3xl lg:leading-relaxed">Generate a <strong><span className="bg-secondary">5X increase</span> in lifetime customer value</strong> and a <strong><span className="bg-secondary">64%</span> increase in productivity</strong> while <strong>reducing operational costs more than <span className="bg-secondary">74%</span> with better software integrations.</strong></p>
           </div>
+          <div className="mt-48 mb-8 md:mb-48 lg:max-w4xl mx-auto text-center">
+            <p className="text-white  text-3xl md:text-5xl mb-2">Make Smarter Software Integration Decisions</p>
+            <p className="text-white text-xl lg:text-3xl">Download my personal integration template that I use to design, plan & budget all my integration solutions. I use this template universally on any type of integration. It works for cloud services, payment processors, data services, custom integrations, supply chain and anything else.  </p>
+            <p className="mt-14">
+              <a className="font-cursive mx-auto btn btn-outline border-secondary text-2xl text-secondary border-2 py-6 px-20" href="#start">download free template</a>
+            </p>
+          </div>
           <div className="mt-8 mb-8 md:mb-20 lg:max-w4xl mx-auto">
-            <p className="text-white  text-3xl md:text45xl mb-2"><span className="text-secondary text-3xl mr-3 hidden md:inline-block">></span> Who am I?</p>
-            <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated cloud-native technology teams <span className="bg-secondary text-primary">deploy well-architected integration systems that deliver confidence</span> in security, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
+            <p className="text-white  text-3xl md:text4xl mb-2"><span className="text-secondary text-3xl mr-3 hidden md:inline-block">></span> Who am I?</p>
+            <p className="text-white text-xl lg:text-3xl font-cursive">I help frustrated technology product leaders disrupt industries through <span className="bg-secondary text-primary">integrations that deliver confidence</span> in security, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
           </div>
           <div className="flex mb-16 md:mb-32 flex-col md:flex-row text-center justify-center">
             <div className="w-full md:w-1/3 py-4">
@@ -54,7 +61,7 @@ export default function Page() {
             <p className="text-white text-xl lg:text-3xl font-cursive">I connect complicated software systems together. Officially, you can call me an "Integration Architect"... but that isn't very descriptive. What I really do is design, plan & lead integration projects that require working with many different pieces. I enjoy making complex things work together. </p>
           </div>
         </div>
-        <div className="lg:max-w-5xl mx-auto bg-white px-6 py-6 lg:mt-24 mt-10">
+        <div className="lg:max-w-5xl mx-auto bg-white px-6 py-6 lg:mt-44 mt-10">
           <p className="max-w-3xl mx-auto after:content-[' '] after:block after:h-1 after:mt-6 after:mx-auto after:max-w-lg after:bg-secondary max-w-4xl mx-auto text-2xl lg:text-6xl text-center leading-relaxe">Here's some interesting info</p>
           <ul className="max-w-3xl mx-auto">
             <li className="list-disc font-cursive text-lg lg:text-3xl leading-relaxed my-8">Over <span className="text-secondary">80%</span> of enterprise Business Operations leaders say data integration is critical to ongoing operations.</li>
