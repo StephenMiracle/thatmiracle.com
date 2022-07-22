@@ -41,8 +41,8 @@ export default function Page() {
               <a className="font-cursive mx-auto btn btn-outline border-secondary text-2xl text-secondary border-2 py-6 px-20" href="#start">download free template</a>
             </p>
           </div>
-          <div className="mt-8 md:mt-36 mb-8 md:mb-38 lg:max-w4xl mx-auto">
-             <p className="text-white text-xl lg:text-5xl font-cursive text-center">I help frustrated technology product leaders disrupt industries through <span className="bg-secondary text-primary">integrations that deliver confidence</span> in security, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
+          <div className="mt-8 md:mt-36 mb-8 md:mb-40 lg:max-w4xl mx-auto">
+             <p className="text-white text-xl lg:text-4xl font-cursive leading-10 md:text-center">I help frustrated technology product leaders disrupt industries through integrations that deliver confidence in security, performance & results. Build integrations with <span className="text-secondary">99.99%</span> uptime, <span className="text-secondary">1 million</span> transactions / second & real-time notifications that provides satisfaction for all business users, customers & stakeholders. </p>
           </div>
           <div className="flex mb-16 md:mb-32 flex-col md:flex-row text-center justify-center">
             <div className="w-full md:w-1/3 py-4">
