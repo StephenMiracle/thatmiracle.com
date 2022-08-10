@@ -38,7 +38,7 @@ export default function Page() {
             <p className="text-white  text-3xl md:text-5xl mb-2">Make Smarter Software Integration Decisions</p>
             <p className="text-white text-xl lg:text-3xl">Download my personal integration template that I use to design, plan & budget all my integration solutions. I use this template universally on any type of integration. It works for cloud services, payment processors, data services, custom integrations, supply chain and anything else.  </p>
             <p className="mt-14">
-              <a className="font-cursive mx-auto btn btn-outline border-secondary text-2xl text-secondary border-2 py-6 px-20" href="#start">download free template</a>
+              <a className="font-cursive mx-auto btn btn-outline border-secondary text-lg md:text-2xl text-secondary border-2 py-6 px-20" href="#start">download free template</a>
             </p>
           </div>
           <div className="mt-8 md:mt-36 mb-8 md:mb-40 lg:max-w4xl mx-auto">
