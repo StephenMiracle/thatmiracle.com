@@ -32,7 +32,7 @@ export default function Page() {
             </div>
           </div>
           <div className=" px-6 lg:max-w-3xl mx-auto mt-8 lg:mt-32 mb-24">
-            <p className="text-primary font-cursive px-6 py-6 bg-white max-w-4xl mx-auto text-xl text-2lg lg:text-3xl lg:leading-relaxed">Generate a <strong><span className="bg-secondary">5X increase</span> in lifetime customer value</strong> and a <strong><span className="bg-secondary">64%</span> increase in productivity</strong> while <strong>reducing operational costs more than <span className="bg-secondary">74%</span> with better software integrations.</strong></p>
+            <p className="text-primary font-cursive px-6 py-6 bg-white max-w-4xl mx-auto text-xl text-2lg lg:text-3xl lg:leading-relaxed">Cloud software teams see a <strong><span className="bg-secondary">5X increase</span> in lifetime customer value</strong> and a <strong><span className="bg-secondary">64%</span> increase in productivity</strong> while <strong>reducing operational costs more than <span className="bg-secondary">74%</span> using the Integration Confidence system.</strong></p>
           </div>
           <div className="mt-48 mb-8 md:mb-48 lg:max-w4xl mx-auto text-center">
             <p className="text-white  text-3xl md:text-5xl mb-2">Make Smarter Software Integration Decisions</p>
