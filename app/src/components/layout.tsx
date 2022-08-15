@@ -7,8 +7,8 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
+import Footer from "./footer"
 
 export default function layout ({ children, headerFontColor, backgroundColor, hideLogoOnLoad }) {
   const [hasSent, setHasSent] = React.useState(false)
@@ -42,6 +42,7 @@ export default function layout ({ children, headerFontColor, backgroundColor, hi
               fontSize: `var(--font-sm)`,
             }}
           >
+            <Footer/>
             <div className="bg-white border-t-secondary border-t-4 px-4 pb-12">
               <div id="start" className="max-w-5xl mx-auto mt-16 md:flex flex-col md:flex-row">
                 <div className="md:w-1/2">
